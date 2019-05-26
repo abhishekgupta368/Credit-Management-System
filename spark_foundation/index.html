@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Credit Transfer</title>
+    <link rel="stylesheet" href="index_new.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <style>
+  body{
+    background-image: url("images/ecomm.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 60px;
+    padding: 20px;
+    width: 700px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 50px;
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .hd{
+    font-size: 80px;
+    margin-bottom: 100px;
+    color: white;
+  }
+  .container{
+    background: black;
+    width: 80%;
+    padding: 40px;
+    margin: 100px;
+    opacity: 0.9;
+  }
+</style>
+  <body>
+    <center>
+      <div class="container">
+        <h1 class="hd">Credit Management System</h1>
+        <button class="button" onclick="change_win()"><span>Manage Credits</span></button>
+      </div>
+    </center>
+  </body>
+  <script type="text/javascript">
+    function change_win() {
+      window.location.href = "index.php";
+    }
+  </script>
+</html>
